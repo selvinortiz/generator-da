@@ -1,0 +1,10 @@
+{
+  "name": "<%= name %>",
+  "version": "<%= version %>",
+  "developer": "<%= developer %>",
+  "developerUrl": "<%= developerUrl %>",
+  "class": "craft\\plugins\\<%= handle %>\\<%= klass %>",
+  "components": {
+    "service": "craft\\plugins\\<%= handle %>\\services\\<%= klass %>Service"
+  }
+}
