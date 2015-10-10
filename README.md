@@ -7,7 +7,5 @@
 ## Run
 `$ yo da`
 
-This command will create a new **Craft 3** plugin
-
 ## License
 MIT &copy; [Selvin Ortiz](http://selv.in)
