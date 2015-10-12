@@ -6,6 +6,11 @@ var path       = require('path');
 var chalk      = require('chalk');
 var yodasay    = require('../yodasay');
 module.exports = yo.generators.Base.extend({
+  constructor: function() {
+    yo.Base.apply(this, arguments);
+
+    // Options and arguments get defined here
+  },
   init: function() {
     var cb = this.async();
     var questions = [
@@ -53,18 +58,20 @@ module.exports = yo.generators.Base.extend({
     this.prompt(questions, function(answers) {
       var src    = 'plugin/**';
       var dest   = path.join(answers['path'], answers['handle']);
-      var prefix = answers['klass'];
       var move   = function(from, to, inside) {
-        this.fs.move(this.destinationPath(dest, inside, from), this.destinationPath(dest, inside, to));
+        this.fs.move(
+          this.destinationPath(dest, inside, from),
+          this.destinationPath(dest, inside, to)
+        );
       }.bind(this);
 
       this.fs.copyTpl(this.templatePath(src), this.destinationPath(dest), answers);
 
-      move('_Plugin.php', prefix + '.php', '');
+      move('_Plugin.php', answers['klass'] + '.php', '');
       move('_gitkeep', '.gitkeep', 'migrations');
-      move('_Service.php', prefix + 'Service.php', 'services');
-      move('_Settings.php', prefix + 'Settings.php', 'models');
-      move('_Variable.php', prefix + 'Variable.php', 'variables');
+      move('_Service.php', 'Service.php', 'services');
+      move('_Settings.php', 'Settings.php', 'models');
+      move('_Variable.php', 'Variable.php', 'variables');
 
       cb();
     }.bind(this));

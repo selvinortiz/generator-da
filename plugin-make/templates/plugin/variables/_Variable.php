@@ -4,11 +4,11 @@ namespace craft\plugins\<%= handle %>\variables;
 use Craft;
 
 /**
- * Class <%= klass %>Variable
+ * Class Variable
  *
  * @package craft\plugins\<%= handle %>\variables
  */
-class <%= klass %>Variable
+class Variable
 {
 	// Template API
 }

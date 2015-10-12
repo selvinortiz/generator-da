@@ -5,11 +5,11 @@ use Craft;
 use craft\app\base\Component;
 
 /**
- * Class <%= klass %>Service
+ * Class Service
  *
  * @package craft\plugins\<%= handle %>\services
  */
-class <%= klass %>Service extends Component
+class Service extends Component
 {
 	// Plugin API
 }

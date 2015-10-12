@@ -1,12 +1,14 @@
 {
   "name": "generator-da",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Tiny but wise and powerful yeoman generator for Craft CMS",
   "main": "app/index.js",
   "files": [
     "app",
-    "craft"
+    "craft-make",
+    "plugin-make"
   ],
+  "repository": "selvinortiz/generator-da",
   "keywords": [
     "yeoman-generator",
     "generator-da",

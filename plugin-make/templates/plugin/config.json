@@ -5,6 +5,6 @@
   "developerUrl": "<%= developerUrl %>",
   "class": "craft\\plugins\\<%= handle %>\\<%= klass %>",
   "components": {
-    "service": "craft\\plugins\\<%= handle %>\\services\\<%= klass %>Service"
+    "service": "craft\\plugins\\<%= handle %>\\services\\Service"
   }
 }

@@ -5,11 +5,11 @@ use Craft;
 use craft\app\base\Model;
 
 /**
- * Class <%= klass %>Settings
+ * Class Settings
  *
  * @package craft\plugins\<%= handle %>\models
  */
-class <%= klass %>Settings extends Model
+class Settings extends Model
 {
 	public function rules()
 	{

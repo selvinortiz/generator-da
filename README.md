@@ -7,5 +7,9 @@
 ## Run
 `$ yo da`
 
+## Generators
+- `$ yo da:craft-make`
+- `$ yo da:plugin-make`
+
 ## License
 MIT &copy; [Selvin Ortiz](http://selv.in)

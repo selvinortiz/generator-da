@@ -3,15 +3,15 @@ namespace craft\plugins\<%= handle %>;
 
 use Craft;
 use craft\app\base\Plugin;
-use craft\plugins\<%= handle %>\models\<%= klass %>Settings;
-use craft\plugins\<%= handle %>\services\<%= klass %>Service;
+use craft\plugins\<%= handle %>\models\Settings;
+use craft\plugins\<%= handle %>\services\Service;
 
 /**
  * Class <%= klass %>
  *
  * @package craft\plugins\<%= handle %>;
  *
- * @property <%= klass %>Service $service
+ * @property Service $service
  */
 class <%= klass %> extends Plugin
 {
@@ -36,7 +36,7 @@ class <%= klass %> extends Plugin
 	 */
 	public function getSettingsModel()
 	{
-		return new <%= klass %>Settings();
+		return new Settings();
 	}
 
 	/**
@@ -44,6 +44,6 @@ class <%= klass %> extends Plugin
 	 */
 	public function getVariableDefinition()
 	{
-		return 'craft\\plugins\\<%= handle %>\\variables\\<%= klass %>Variable';
+		return 'craft\\plugins\\<%= handle %>\\variables\\Variable';
 	}
 }
