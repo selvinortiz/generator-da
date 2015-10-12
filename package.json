@@ -6,7 +6,8 @@
   "files": [
     "app",
     "craft-make",
-    "plugin-make"
+    "plugin-make",
+    "yodasay.js"
   ],
   "repository": "selvinortiz/generator-da",
   "keywords": [
