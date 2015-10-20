@@ -1,6 +1,6 @@
 {
   "name": "generator-da",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Tiny but wise and powerful yeoman generator for Craft CMS",
   "main": "app/index.js",
   "files": [
@@ -21,7 +21,9 @@
   "license": "MIT",
   "dependencies": {
     "chalk": "^1.1.1",
+    "download": "^4.2.1",
     "inflection": "^1.7.1",
+    "pleasant-progress": "^1.1.0",
     "yeoman-generator": "^0.20.3"
   }
 }
